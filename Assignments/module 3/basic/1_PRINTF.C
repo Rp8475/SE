@@ -1,9 +1,0 @@
-// PROGRAM 1 : DISPLAY THE INFORMATION USING PRINTF - (START) 
-#include<stdio.h>
-main(){
-    printf("ROHAN PATEL");
-    printf("17-01-2004");
-    printf("Age is 20");
-    printf("E/84 MANOHARVILLA GATE NO.2,NEAR DEVASYA BUNGLOWS, NIKOL-NARODA ROAD, NEW NARODA, Ahmedabad");
-}
-// PROGRAM 1 : DISPLAY THE INFORMATION USING PRINTF -- (END) 
