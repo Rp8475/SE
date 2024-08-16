@@ -32,7 +32,7 @@ public:
      setName() {
         cout << "***********************************************************" << endl;
         cout << "<-enter your first & last name->" << endl;
-        cin.ignore(); // Ignore leftover newline character from previous input
+       
         getline(cin, name); // Use getline to allow spaces in name
     }
 
