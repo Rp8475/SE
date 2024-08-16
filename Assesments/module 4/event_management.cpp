@@ -17,7 +17,7 @@ public:
      setEvent() {
         cout << "<-enter event->" << endl;
         cin >> event; // Read event name
-        cin.ignore(); // Ignore leftover newline character from previous input
+       
         getline(cin, event); // Use getline to allow spaces in name
     }
 
