@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adocmedi - Patient Home</title>
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/signup.css">
     <link rel="stylesheet" href="./css/responsive.css">
   </head>
   <body>
@@ -36,14 +36,14 @@
     <!-- SIGNUP START -->
      <div class="row">
       <div class="col-2 col-s-2"></div>
-      <div class="col-8 col-s-8 contact">
+      <div class="col-8 col-s-8  signup">
         <div class="left">
           <img src="./img/login-banner.png" alt="">
         </div>
         <div class="col-s-12 right" >
           <form action="#" method="post" target="_blank">
             <!-- <legend>Patient Registeration</legend> -->
-            <h2 align="center">Contact Us</h2></marquee>
+            <h2 align="center">Patient Registeration</h2></marquee>
 
             <label for="">Name : </label>
             <input type="text" placeholder="Name" required><br><br>
@@ -54,10 +54,26 @@
             <label for="">Mobile Number : </label>
             <input type="number" maxlength="10" placeholder="Mobile no" required><br><br>
 
-            <label for="">Comment : </label><br>
-            <textarea name="comment" id="" ></textarea>
+            <label for="">Gender : </label>
+            <select name="Gender" id="" required>
+              <option value="Select Gender">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select><br><br>
+
+            <label for="password" required>
+              Password (at least 8 characters):
+          </label>
+  
+          <input type="password"
+                 id="password"
+                 name="password"
+                 placeholder="Create Password" 
+                 pattern=".{8,}" required>
+                 <h3>Already have an account? <a href="">Login</a></h3>
                 
-          <input type="button" value="SignUp" class="signup-btn">
+          <input type="submit" value="SignUp" class="signup-btn">
+          <p>By signing up, you agree to Adocmedi <a href="terms.html">Terms of Service</a> and <a href="terms.html">Privacy Policy</a></p>
 
           </form>
         </div>
