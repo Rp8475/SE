@@ -1,55 +1,27 @@
-<!--
-
-var age=21   		number
-var name="rajesh"   string
-
-var students=['rajesh','udit','rohan','jeet','vrinda','shristi'];
-
-
-JavaScript arrays are used to store multiple values in a single variable.
-An array is a special variable, which can hold more than one value at a time.
-
-var car1 = "Saab";  normal var
-var car2 = "Volvo";
-var car3 = "BMW";
-
-var cars=["Saab","Volvo","BMW"];   // arr variable
-
-Access the Elements of an Array
-You access an array element by referring to the index number.
-var name = cars[0];
--->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["apple", "banana", "grapes"];
+      fruits.push("pinepal");
 
-<script>
-// normal var
-var car1 = "Saab"; 
-var car2 = "Volvo";
-var car3 = "BMW";
+      fruits.shift();
+      fruits.unshift("apple");
+      console.log(fruits);
 
-//document.write("<h1>" + car1 + "</h1>");
+      let arr = [1, 2, 3, 4, 5];
+      let sum = 0;
 
-document.write(`<h1>${car1}</h1>`);
-
-var cars=["Saab","Volvo","BMW","KIA","AUDI"]; 
-
-document.write(`<h1>${cars}</h1>`);
-
-document.write(`<h1>${cars[3]}</h1>`);
-
-
-for(var i=0;i<cars.length;i++)
-{
-	document.write(`<h1>${cars[i]}</h1>`);
-}
-
-</script>
-
-
-
-
-</body>
+      
+      for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+      }
+      console.log(sum);
+    </script>
+  </body>
 </html>
